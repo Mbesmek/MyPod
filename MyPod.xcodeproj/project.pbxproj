@@ -18,6 +18,7 @@
 		F84E48A426FB7CF200944DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84E48A226FB7CF200944DDF /* LaunchScreen.storyboard */; };
 		F84E48AF26FB7CF200944DDF /* MyPodExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E48AE26FB7CF200944DDF /* MyPodExampleTests.swift */; };
 		F84E48BA26FB7CF200944DDF /* MyPodExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E48B926FB7CF200944DDF /* MyPodExampleUITests.swift */; };
+		F84E48CB26FB80AD00944DDF /* MyPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E48CA26FB80AD00944DDF /* MyPod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F84E48B526FB7CF200944DDF /* MyPodExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPodExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84E48B926FB7CF200944DDF /* MyPodExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPodExampleUITests.swift; sourceTree = "<group>"; };
 		F84E48BB26FB7CF200944DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F84E48CA26FB80AD00944DDF /* MyPod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		F84E486B26FB7C4000944DDF = {
 			isa = PBXGroup;
 			children = (
+				F84E48CA26FB80AD00944DDF /* MyPod.swift */,
 				F84E487726FB7C4000944DDF /* MyPod */,
 				F84E488226FB7C4100944DDF /* MyPodTests */,
 				F84E489626FB7CF000944DDF /* MyPodExample */,
@@ -295,6 +298,7 @@
 				TargetAttributes = {
 					F84E487426FB7C4000944DDF = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					F84E487D26FB7C4100944DDF = {
 						CreatedOnToolsVersion = 12.4;
@@ -380,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84E48CB26FB80AD00944DDF /* MyPod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +587,7 @@
 		F84E488A26FB7C4100944DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -597,6 +603,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bootcamp.MyPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,6 +612,7 @@
 		F84E488B26FB7C4100944DDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -628,6 +636,7 @@
 		F84E488D26FB7C4100944DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyPodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -645,6 +654,7 @@
 		F84E488E26FB7C4100944DDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyPodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
